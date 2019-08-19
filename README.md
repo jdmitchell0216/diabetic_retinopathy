@@ -4,3 +4,5 @@ Diagnosis of diabetic retinopathy can be done through the analysis of patient re
 The project has been set up on Google Cloud Platform (GCP) so some of the work in the setup notebook will not be applicable if one is attempting to run these notebooks locally.
 
 A series of blog posts are being written on this project on [Medium](https://medium.com/@jdmitchell0216/diabetic-retinopathy-ml-diagnosis-introduction-eda-and-baseline-model-9b2381bbac28)
+
+Currently, the model makes classifications in two stages. The first stage distinguishes between images with no signs of diabetic retinopathy (label 0) and those that do (labels 1-4). Images that are not classified as 0 continue into the second stage, where they are classified as one of the non-zero labels.
